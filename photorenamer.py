@@ -9,9 +9,6 @@ list_of_files = os.listdir(path)
 count_of_files = len(list_of_files)
 os.chdir(path)
 
-# way = str(input('Is it Photo or Screenshot? Type \"p\" or \"s\": '))
-
-# if way == 'p':
 for i in range(0, count_of_files):
     if list_of_files[i][:3] == 'IMG':
         n = list_of_files[i][4:8] + '-' + list_of_files[i][8:10] + '-' + list_of_files[i][10:12] + '-' + list_of_files[i][13:15] + '-' + list_of_files[i][15:17] + '-' + list_of_files[i][17:19] + list_of_files[i][-4:]
