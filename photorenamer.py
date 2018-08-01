@@ -23,10 +23,3 @@ for i in range(0, count_of_files):
         continue
     print(n)
     os.rename(list_of_files[i], n)
-
-# if way == 's':
-#     for i in range(0, count_of_files):
-#         # n = list_of_files[i][11:]
-#         n = list_of_files[i][:19] + list_of_files[i][-4:]
-#         print(n)
-#         os.rename(list_of_files[i], n)
