@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-# import sys
-
 print('Калькулятор подсчёта стоимости бензина приветствует.\n'
       'NB! Дробные числа надо вводить через точку.')
 
@@ -11,15 +9,10 @@ user_input = input('Стоимость 1 л бензина - {} руб. '
 if user_input == 'y' or user_input == 'н':
     gas_prise = float(input('Новая стоимость: '))
     print('Подтверждаю, стоимость теперь {} руб.'.format(gas_prise))
-    # path_to_this_file = sys.argv[0]
-    # with open(path_to_this_file, 'w') as f:
 
 while True:
     mileage = float(input('Пробег, км: '))
     gas_usage = float(input('Расход бензина, л на 100 км: '))
-
-    # за 100 км расходуется gas_usage бензина
-    # за mileage км расходуется x бензина
 
     gas_cost = round(mileage * gas_usage / 100 * gas_prise)
     user_input = input('Израсходовано бензина на {} руб.'
@@ -29,3 +22,5 @@ while True:
         break
     else:
         continue
+
+#fuck
